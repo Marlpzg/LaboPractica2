@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Currículum Vitae</title>
+</head>
+<body>
+
+    <section>
+    
+        <article>
+
+            <h1 style="text-align: center;">Currículum Vitae</h1>
+
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Personal Data</legend>
+
+                    <label for="dui">DUI:</label>
+                    <input type="text" name="dui" id="dui" placeholder="04813412-8" pattern="\d{8,8}-\d{1,1}" title="Ingrese un DUI válido" required minlength="10" maxlength="10">
+
+                    <label for="nom">First Name</label>
+                    <input type="text" name="nom" id="nom" placeholder="First Name" pattern="[A-Za-z]{3,20}" title="Ingrese únicamente letras (20 Caracteres Máximo)" required>
+
+                    <label for="ape">Last Name</label>
+                    <input type="text" name="ape" id="ape" placeholder="Last Name" pattern="[A-Za-z]{3,20}" title="Ingrese únicamente letras (20 Caracteres Máximo)" required>
+
+                    <label for="">Gender</label>
+                    <input type="radio" name="gender" id="male" value="M" checked>
+                    <label for="male">M</label>
+                    <input type="radio" name="gender" id="female" value="F">
+                    <label for="female">F</label>
+
+                    <br>
+
+                    <label for="cn">Contact Number</label>
+                    <input type="tel" name="cn" id="cn" pattern="\d{4,4}-\d{4,4}" title="Solo se permite números" required minlength="9" maxlength="9" placeholder="####-####">
+
+                    <label for="bd">Birth Date</label>
+                    <input type="date" name="bd" id="bd" required min="2000-01-01" max="2018-12-31">
+
+                    <label for="status">Civil Satus</label>
+                    <select name="status" id="status">
+                        <option value="Single">Single</option>
+                        <option value="Married">Married</option>
+                        <option value="Divorced">Divorced</option>
+                    </select>
+
+                    <label for="image">Image</label>
+                    <input type="file" name="image" id="image">
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Work Experience</legend>
+
+                    <textarea name="xp" id="xp" cols="30" rows="10" placeholder="Experience" style="width: 100%;" required></textarea>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Academic Training</legend>
+
+                    <textarea name="at" id="at" cols="30" rows="10" placeholder="Academic Training" style="width: 100%;" required></textarea>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+
+                    <legend>Further Training</legend>
+
+                    <fieldset>
+                        <legend>Programming Languages</legend>
+
+                        <input type="checkbox" name="java" id="java" value="Java">
+                        <label for="java">Java</label>
+
+                        <input type="checkbox" name="csharp" id="csharp" value="C#">
+                        <label for="csharp">C#</label>
+
+                        <input type="checkbox" name="python" id="python" value="Python">
+                        <label for="python">Python</label>
+
+                        <input type="checkbox" name="cpp" id="cpp" value="C++">
+                        <label for="cpp">C++</label>
+
+                        <input type="checkbox" name="ruby" id="ruby" value="Ruby">
+                        <label for="ruby">Ruby</label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Web Technologies</legend>
+
+                        <input type="checkbox" name="html" id="html" value="HTML5">
+                        <label for="html">HTML5</label>
+
+                        <input type="checkbox" name="css" id="css" value="CSS/CSS3">
+                        <label for="css">CSS/CSS3</label>
+
+                        <input type="checkbox" name="mat" id="mat" value="Materialize CSS">
+                        <label for="mat">Materialize CSS</label>
+
+                        <input type="checkbox" name="js" id="js" value="JavaScript">
+                        <label for="js">JavaScript</label>
+
+                        <input type="checkbox" name="node" id="node" value="Node.js">
+                        <label for="node">Node.js</label>
+
+                        <input type="checkbox" name="spring" id="spring" value="Spring MVC">
+                        <label for="spring">Spring MVC</label>
+                    </fieldset>
+
+                </fieldset>
+                <input type="submit" value="Enviar" name="Enviar">
+                <input type="reset" value="Cancelar" name="Cancelar">
+            </form>
+
+            <br><hr>
+
+            <p>
+                <a href="index.html">Regresar</a>
+            </p>
+        </article>
+    </section>
+</body>
+</html>
